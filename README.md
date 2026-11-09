@@ -38,6 +38,12 @@ and longer data periods, with how many there are. `wire_cjtag` marks example cJT
 `wire_clock` groups a clock's bursts by period. They live in mculink-bench's `tools/wire/`, and each
 annotation file's first line names the decoder and the hash of the version that wrote it.
 
+In the SWD reads, each session's annotation also states its figures as values: the clock asked for,
+and the request, read data and write data clocks measured, in MHz. `wire-clock-request.chart.json`,
+`wire-clock-read.chart.json` and `wire-clock-write.chart.json` chart them against the clock asked
+for, in tickwave's chart format, and each point names the session it comes from. mculink-bench's
+`tools/wire/wire_chart.py` writes them from the annotations.
+
 ## Licence
 
 The recordings and their annotations are licensed under the Creative Commons Attribution 4.0
