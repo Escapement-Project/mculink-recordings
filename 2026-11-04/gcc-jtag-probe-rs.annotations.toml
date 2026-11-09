@@ -1,0 +1,4 @@
+format = "tickwave-annotations/1"
+recording = "gcc-jtag-probe-rs.tickwave"
+recording_id = "blake3:86166a2aebfe9cbaeb37a0fe5cd1fe1e2229e60a39766cbd3413a95c0f5fe679"
+include = ["gcc-jtag-probe-rs.wire_clock.jsonl"]
