@@ -2,8 +2,8 @@
 
 Logic analyser recordings of MCU-Link probes driving a target's debug pins, in
 [tickwave](https://github.com/Escapement-Project/tickwave)'s format. The
-[measurements page](https://escapement-project.github.io/measurements/) cites them: a figure in its
-"On the wire" section opens the stretch of wire it comes from.
+[measurements page](https://escapement-project.github.io/verge/measurements/) cites them: a figure
+in its "On the wire" section opens the stretch of wire it comes from.
 
 Each set is a folder named by the date of its measurements. A recording, `NAME.tickwave`, has its
 annotations beside it. `NAME.annotations.toml` is written by hand and includes the files a decoder
