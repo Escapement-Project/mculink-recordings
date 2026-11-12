@@ -1,4 +1,4 @@
 format = "tickwave-annotations/1"
 recording = "stock-swd-reads.tickwave"
-recording_id = "blake3:11645aed48c47b1a65d7cd4d59122efc1fa9ce1ff520241dbd038a73ff03ad88"
+recording_id = "blake3:a49095361007af2ed36aaa7847f51817191a5cc022d56521674a85e326ba4bd5"
 include = ["stock-swd-reads.wire_swd.jsonl"]

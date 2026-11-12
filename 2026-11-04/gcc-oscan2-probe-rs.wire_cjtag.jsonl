@@ -1,4 +1,4 @@
-{"format": "tickwave-annotations/1", "source": "wire_cjtag", "version": "sha256:ff787617c789", "recording_id": "blake3:366355d96067421e246b59be879e157d5e72bed9fdfe4bd7351a025b2c832ed8"}
+{"format": "tickwave-annotations/1", "source": "wire_cjtag", "version": "sha256:ff787617c789", "recording_id": "blake3:2d2dbbc06762843cdd1e3b96ae2f0efd33753da31266dec2762215c53bb11991"}
 {"id": "frame/26344840323", "kind": "frame", "start": 26344840323, "end": 26344840451, "channels": ["TCKC", "TMSC"], "label": "3 packets in 127 ns: 44% of 4,334,420 frames whose shortest packet is 20 ns", "measure": {"channel": "TCKC", "what": "duration"}}
 {"id": "tdo/26344840370", "kind": "tdo", "start": 26344840357, "end": 26344840460, "channels": ["TCKC", "TMSC"], "label": "TDO packet, 80 ns", "measure": {"channel": "TCKC", "what": "period"}}
 {"id": "frame/26354443709", "kind": "frame", "start": 26354443709, "end": 26354443790, "channels": ["TCKC", "TMSC"], "label": "3 packets in 80 ns: 3% of 4,334,420 frames whose shortest packet is 20 ns", "measure": {"channel": "TCKC", "what": "duration"}}

@@ -1,4 +1,4 @@
-{"format": "tickwave-annotations/1", "source": "wire_clock", "version": "sha256:ed36c4878e22", "recording_id": "blake3:86166a2aebfe9cbaeb37a0fe5cd1fe1e2229e60a39766cbd3413a95c0f5fe679"}
+{"format": "tickwave-annotations/1", "source": "wire_clock", "version": "sha256:ed36c4878e22", "recording_id": "blake3:e2a62a835c5802a41b352edf36b59402e07f73044555ba9c3d8d80b5470d2f27"}
 {"id": "session/585466293", "kind": "session", "start": 585465659, "end": 10566467570, "channels": ["TCK"], "label": "TCK bursts at 33 ns 30%, 53 ns 15%, 100 ns 14%, 200 ns 14% of the periods"}
 {"id": "clock/9969845407", "kind": "clock", "start": 9969845390, "end": 9969846556, "channels": ["TCK"], "label": "Bursts at 33 ns: 33 ns 85%, 53 ns 9%, 93 ns 2% of their 10,572,860 periods", "measure": {"channel": "TCK", "what": "rate"}}
 {"id": "clock/9563813840", "kind": "clock", "start": 9563813814, "end": 9563816032, "channels": ["TCK"], "label": "Bursts at 53 ns: 53 ns 86%, 73 ns 8%, 87 ns 2% of their 5,272,754 periods", "measure": {"channel": "TCK", "what": "rate"}}
