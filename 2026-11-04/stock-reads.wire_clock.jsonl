@@ -1,4 +1,4 @@
-{"format": "tickwave-annotations/1", "source": "wire_clock", "version": "sha256:ed36c4878e22", "recording_id": "blake3:bd57663d603cf593c3d329cc3dfd053a0b55983574a3f4edd530e3975dba316e"}
+{"format": "tickwave-annotations/1", "source": "wire_clock", "version": "sha256:35df9dba9410", "recording_id": "blake3:bd57663d603cf593c3d329cc3dfd053a0b55983574a3f4edd530e3975dba316e"}
 {"id": "session/379722028", "kind": "session", "start": 379721484, "end": 3420946023, "channels": ["TCK"], "label": "1 MHz asked: TCK bursts at 1067 ns 99% of the periods"}
 {"id": "clock/382227065", "kind": "clock", "start": 382226562, "end": 382296102, "channels": ["TCK"], "label": "Bursts at 1067 ns: 1067 ns 73%, 1040 ns 8%, 1007 ns 3% of their 2,749,473 periods", "measure": {"channel": "TCK", "what": "rate"}}
 {"id": "session/3488239852", "kind": "session", "start": 3488239749, "end": 4083473403, "channels": ["TCK"], "label": "10 MHz asked: TCK bursts at 187 ns 99%, 173 ns 1% of the periods"}
