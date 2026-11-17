@@ -5,11 +5,15 @@ Logic analyser recordings of MCU-Link probes driving a target's debug pins, in
 [measurements page](https://escapement-project.github.io/verge/measurements/) cites them: a figure
 in its "On the wire" section opens the stretch of wire it comes from.
 
-Each set is a folder named by the date of its measurements. A recording, `NAME.tickwave`, has its
-annotations beside it. `NAME.annotations.toml` is written by hand and includes the files a decoder
-writes, such as `NAME.wire_swd.jsonl`. A decoder rewrites its own file whole, so a hand edit never
-gets lost. tickwave's viewer opens a recording from its URL or from disk, and its command line
-describes one with `tickwave info NAME.tickwave`.
+Each set is a folder named by the date of its measurements. A recording, `NAME.tickwave`, carries
+its annotations, so it opens annotated on its own. The same annotations sit beside it as files.
+`NAME.annotations.toml` is written by hand and includes the files a decoder writes, such as
+`NAME.wire_swd.jsonl`. A decoder rewrites its own file whole, so a hand edit never gets lost. The
+hand-written file also says how a view of the recording starts: the trace's colour, and for cJTAG
+the channels, TCKC and TMSC without SWO. After a change to the files, `tickwave bundle` puts them
+into the recording again. `uv run python -I check.py` checks every recording's files with tickwave
+and that the recording carries those same files. tickwave's viewer opens a recording from its URL
+or from disk, and its command line describes one with `tickwave info NAME.tickwave`.
 
 ## 2026-11-04
 
@@ -35,8 +39,10 @@ throughput behind these recordings is not the page's: those runs had nothing on 
 The annotations come from three decoders. `wire_swd` finds each SWD transfer and marks an example of
 each kind and clock with its phases, and the first few unusual acknowledges, read parity failures
 and longer data periods, with how many there are. `wire_cjtag` marks example cJTAG frames by length.
-`wire_clock` groups a clock's bursts by period. They live in mculink-bench's `tools/wire/`, and each
-annotation file's first line names the decoder and the hash of the version that wrote it.
+Across each example, both paint who drives the shared line, SWDIO or TMSC: the probe, the target, or
+in an SWD turnaround neither. `wire_clock` groups a clock's bursts by period. They live in
+mculink-bench's `tools/wire/`, and each annotation file's first line names the decoder and the hash
+of the version that wrote it.
 
 In the SWD reads, each session's annotation also states its figures as values: the clock asked for,
 and the request, read data and write data clocks measured, in MHz. `wire-clock-request.chart.json`,
