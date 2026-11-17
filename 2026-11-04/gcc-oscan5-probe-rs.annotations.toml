@@ -1,4 +1,4 @@
 format = "tickwave-annotations/1"
 recording = "gcc-oscan5-probe-rs.tickwave"
-recording_id = "blake3:3dbd3df5b1ac2ad7ead6f8dda1a1f2ae594accb301243598894a911991c8be3d"
+recording_id = "blake3:4abbbc9cbe0042dea3af08e67fe1f8d2aeced8a96cfaf049f7abd76283db5abc"
 include = ["gcc-oscan5-probe-rs.wire_cjtag.jsonl", "gcc-oscan5-probe-rs.wire_clock.jsonl"]

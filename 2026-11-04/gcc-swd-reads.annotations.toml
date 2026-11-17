@@ -1,4 +1,4 @@
 format = "tickwave-annotations/1"
 recording = "gcc-swd-reads.tickwave"
-recording_id = "blake3:ff4b74956a4dd560f35b71ef51fdde3a47db616dcdd57761e142390e7fe510e1"
+recording_id = "blake3:a8aaa4b3fcf592584fcc139b0007c5139512b0f4e7ff6de1fed17157b9ff9649"
 include = ["gcc-swd-reads.wire_swd.jsonl"]
