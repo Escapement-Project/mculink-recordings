@@ -2,3 +2,8 @@ format = "tickwave-annotations/1"
 recording = "gcc-oscan1-probe-rs.tickwave"
 recording_id = "blake3:8a6942769e8fed3b05d571fc167dcbc43a4276828fe281e4f8cfe99c3a97028d"
 include = ["gcc-oscan1-probe-rs.wire_cjtag.jsonl", "gcc-oscan1-probe-rs.wire_clock.jsonl"]
+
+# How a view starts where its page says nothing: TCKC over TMSC, SWO left out, in Verge's colour.
+[view]
+channels = ["TCKC", "TMSC"]
+colour = ["#0f8a6c", "#1aa384"]

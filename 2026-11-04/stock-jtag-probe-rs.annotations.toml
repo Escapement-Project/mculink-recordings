@@ -2,3 +2,7 @@ format = "tickwave-annotations/1"
 recording = "stock-jtag-probe-rs.tickwave"
 recording_id = "blake3:4a21330ad13b19d8e622493cc77223e27325f59c6de38d0b3851e345bbc6d1f1"
 include = ["stock-jtag-probe-rs.wire_clock.jsonl"]
+
+# How a view starts where its page says nothing: in NXP's colour.
+[view]
+colour = ["#2a78d6", "#3987e5"]

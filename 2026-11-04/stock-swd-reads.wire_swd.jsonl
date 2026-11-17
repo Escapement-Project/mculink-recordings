@@ -1,4 +1,4 @@
-{"format": "tickwave-annotations/1", "source": "wire_swd", "version": "sha256:21ffc0326b0e", "recording_id": "blake3:0fa9c176a71b4603382628f02b97159b2c906b5dda1a94e829beba7625098f04"}
+{"format": "tickwave-annotations/1", "source": "wire_swd", "version": "sha256:9b39dce11f38", "recording_id": "blake3:0fa9c176a71b4603382628f02b97159b2c906b5dda1a94e829beba7625098f04", "role": [{"name": "probe", "label": "probe drives"}, {"name": "target", "label": "target drives"}, {"name": "neither", "label": "neither drives", "colour": ["#738691", "#636e79"], "dash": [1.33, 0.67]}]}
 {"id": "session/371629830", "kind": "session", "start": 371629747, "end": 503142400, "channels": ["SWCLK", "SWDIO"], "label": "10 MHz asked: 16,910 transfers, 16,821 OK, 89 WAIT; read data 6.9 MHz, write data 7.1 MHz", "values": {"asked": "10 MHz", "request": "10.5 MHz", "read_data": "6.9 MHz", "write_data": "7.1 MHz"}}
 {"id": "session/545452707", "kind": "session", "start": 545452643, "end": 563187313, "channels": ["SWCLK", "SWDIO"], "label": "20 MHz asked: 20 transfers, 19 OK, 1 FAULT; read data 15.0 MHz, write data 9.4 MHz", "values": {"asked": "20 MHz", "request": "16.7 MHz", "read_data": "15.0 MHz", "write_data": "9.4 MHz"}}
 {"id": "session/604469553", "kind": "session", "start": 604469490, "end": 635607608, "channels": ["SWCLK", "SWDIO"], "label": "25 MHz asked: 4,848 transfers, 4,808 OK, 33 WAIT, 7 no acknowledge; read data 10.0 MHz, write data 10.7 MHz", "values": {"asked": "25 MHz", "request": "18.4 MHz", "read_data": "10.0 MHz", "write_data": "10.7 MHz"}}
@@ -9,39 +9,70 @@
 {"id": "data/372901780", "kind": "data", "start": 372901706, "end": 372906507, "channels": ["SWCLK", "SWDIO"], "label": "Data and parity", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack-check/372901567", "kind": "ack-check", "start": 372901523, "end": 372901853, "channels": ["SWCLK", "SWDIO"], "label": "Acknowledge check, 213 ns", "measure": {"channel": "SWCLK", "what": "period"}}
 {"id": "stretch/376049294", "kind": "stretch", "start": 376049220, "end": 376055561, "channels": ["SWCLK", "SWDIO"], "label": "A read-data period of 6194 ns among mostly 147 ns ones; 159 of 16,713 reads have one", "measure": {"channel": "SWCLK", "what": "period"}}
+{"id": "drive/372900413", "kind": "drive", "start": 372900366, "end": 372901080, "channels": ["SWDIO"], "paint": "probe"}
+{"id": "drive/372901080", "kind": "drive", "start": 372901080, "end": 372901260, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/372901260", "kind": "drive", "start": 372901260, "end": 372906447, "channels": ["SWDIO"], "paint": "target"}
+{"id": "drive/372906447", "kind": "drive", "start": 372906447, "end": 372906727, "channels": ["SWDIO"], "paint": "neither"}
 {"id": "write/373308716", "kind": "write", "start": 373308669, "end": 373314830, "channels": ["SWCLK", "SWDIO"], "label": "Write AP 0x04 0xE000EDF0: OK (one of 108 whose data periods are mostly 140 ns)"}
 {"id": "request/373308716", "kind": "request", "start": 373308669, "end": 373309430, "channels": ["SWCLK", "SWDIO"], "label": "Request", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack/373309563", "kind": "ack", "start": 373309500, "end": 373309913, "channels": ["SWCLK", "SWDIO"], "label": "Turnaround and acknowledge", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "turnaround/373310056", "kind": "turnaround", "start": 373309963, "end": 373310359, "channels": ["SWCLK", "SWDIO"], "label": "Turnaround, 233 ns", "measure": {"channel": "SWCLK", "what": "period"}}
 {"id": "data/373310289", "kind": "data", "start": 373310219, "end": 373314830, "channels": ["SWCLK", "SWDIO"], "label": "Data and parity", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "stretch/376028193", "kind": "stretch", "start": 376028123, "end": 376034450, "channels": ["SWCLK", "SWDIO"], "label": "A write-data period of 6187 ns among mostly 140 ns ones; 13 of 108 writes have one", "measure": {"channel": "SWCLK", "what": "period"}}
+{"id": "drive/373308716", "kind": "drive", "start": 373308669, "end": 373309383, "channels": ["SWDIO"], "paint": "probe"}
+{"id": "drive/373309383", "kind": "drive", "start": 373309383, "end": 373309563, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/373309563", "kind": "drive", "start": 373309563, "end": 373309870, "channels": ["SWDIO"], "paint": "target"}
+{"id": "drive/373309870", "kind": "drive", "start": 373309870, "end": 373310056, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/373310056", "kind": "drive", "start": 373310056, "end": 373314830, "channels": ["SWDIO"], "paint": "probe"}
 {"id": "read/545656512", "kind": "read", "start": 545656482, "end": 545659665, "channels": ["SWCLK", "SWDIO"], "label": "Read DP 0x00: OK, 0x6BA02477 (one of 8 whose data periods are mostly 67 ns)"}
 {"id": "request/545656512", "kind": "request", "start": 545656482, "end": 545656962, "channels": ["SWCLK", "SWDIO"], "label": "Request", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack/545657072", "kind": "ack", "start": 545657029, "end": 545657298, "channels": ["SWCLK", "SWDIO"], "label": "Turnaround and acknowledge", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "data/545657431", "kind": "data", "start": 545657397, "end": 545659598, "channels": ["SWCLK", "SWDIO"], "label": "Data and parity", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack-check/545657272", "kind": "ack-check", "start": 545657245, "end": 545657464, "channels": ["SWCLK", "SWDIO"], "label": "Acknowledge check, 159 ns", "measure": {"channel": "SWCLK", "what": "period"}}
+{"id": "drive/545656512", "kind": "drive", "start": 545656482, "end": 545656932, "channels": ["SWDIO"], "paint": "probe"}
+{"id": "drive/545656932", "kind": "drive", "start": 545656932, "end": 545657072, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/545657072", "kind": "drive", "start": 545657072, "end": 545659565, "channels": ["SWDIO"], "paint": "target"}
+{"id": "drive/545659565", "kind": "drive", "start": 545659565, "end": 545659665, "channels": ["SWDIO"], "paint": "neither"}
 {"id": "read/550901908", "kind": "read", "start": 550901878, "end": 550906455, "channels": ["SWCLK", "SWDIO"], "label": "Read DP 0x00: OK, 0x6BA02477 (one of 5 whose data periods are mostly 107 ns)"}
 {"id": "request/550901908", "kind": "request", "start": 550901878, "end": 550902358, "channels": ["SWCLK", "SWDIO"], "label": "Request", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack/550902468", "kind": "ack", "start": 550902424, "end": 550902694, "channels": ["SWCLK", "SWDIO"], "label": "Turnaround and acknowledge", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "data/550902848", "kind": "data", "start": 550902794, "end": 550906275, "channels": ["SWCLK", "SWDIO"], "label": "Data and parity", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack-check/550902668", "kind": "ack-check", "start": 550902641, "end": 550902901, "channels": ["SWCLK", "SWDIO"], "label": "Acknowledge check, 180 ns", "measure": {"channel": "SWCLK", "what": "period"}}
+{"id": "drive/550901908", "kind": "drive", "start": 550901878, "end": 550902328, "channels": ["SWDIO"], "paint": "probe"}
+{"id": "drive/550902328", "kind": "drive", "start": 550902328, "end": 550902468, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/550902468", "kind": "drive", "start": 550902468, "end": 550906235, "channels": ["SWDIO"], "paint": "target"}
+{"id": "drive/550906235", "kind": "drive", "start": 550906235, "end": 550906455, "channels": ["SWDIO"], "paint": "neither"}
 {"id": "write/550988399", "kind": "write", "start": 550988368, "end": 550992952, "channels": ["SWCLK", "SWDIO"], "label": "Write DP 0x00 0x0000001E: OK (one of 5 whose data periods are mostly 107 ns)"}
 {"id": "request/550988399", "kind": "request", "start": 550988368, "end": 550988848, "channels": ["SWCLK", "SWDIO"], "label": "Request", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack/550988959", "kind": "ack", "start": 550988915, "end": 550989185, "channels": ["SWCLK", "SWDIO"], "label": "Turnaround and acknowledge", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "turnaround/550989300", "kind": "turnaround", "start": 550989229, "end": 550989559, "channels": ["SWCLK", "SWDIO"], "label": "Turnaround, 206 ns", "measure": {"channel": "SWCLK", "what": "period"}}
 {"id": "data/550989506", "kind": "data", "start": 550989453, "end": 550992952, "channels": ["SWCLK", "SWDIO"], "label": "Data and parity", "measure": {"channel": "SWCLK", "what": "rate"}}
+{"id": "drive/550988399", "kind": "drive", "start": 550988368, "end": 550988819, "channels": ["SWDIO"], "paint": "probe"}
+{"id": "drive/550988819", "kind": "drive", "start": 550988819, "end": 550988959, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/550988959", "kind": "drive", "start": 550988959, "end": 550989159, "channels": ["SWDIO"], "paint": "target"}
+{"id": "drive/550989159", "kind": "drive", "start": 550989159, "end": 550989303, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/550989303", "kind": "drive", "start": 550989303, "end": 550992952, "channels": ["SWDIO"], "paint": "probe"}
 {"id": "read/605889591", "kind": "read", "start": 605889564, "end": 605893781, "channels": ["SWCLK", "SWDIO"], "label": "Read AP 0x0C: OK, 0x00080027 (one of 10,150 whose data periods are mostly 100 ns)"}
 {"id": "request/605889591", "kind": "request", "start": 605889564, "end": 605889997, "channels": ["SWCLK", "SWDIO"], "label": "Request", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack/605890085", "kind": "ack", "start": 605890052, "end": 605890285, "channels": ["SWCLK", "SWDIO"], "label": "Turnaround and acknowledge", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "data/605890398", "kind": "data", "start": 605890348, "end": 605893637, "channels": ["SWCLK", "SWDIO"], "label": "Data and parity", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack-check/605890258", "kind": "ack-check", "start": 605890231, "end": 605890447, "channels": ["SWCLK", "SWDIO"], "label": "Acknowledge check, 140 ns", "measure": {"channel": "SWCLK", "what": "period"}}
 {"id": "stretch/608833767", "kind": "stretch", "start": 608833717, "end": 608839964, "channels": ["SWCLK", "SWDIO"], "label": "A read-data period of 6147 ns among mostly 100 ns ones; 137 of 10,150 reads have one", "measure": {"channel": "SWCLK", "what": "period"}}
+{"id": "drive/605889591", "kind": "drive", "start": 605889564, "end": 605889971, "channels": ["SWDIO"], "paint": "probe"}
+{"id": "drive/605889971", "kind": "drive", "start": 605889971, "end": 605890085, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/605890085", "kind": "drive", "start": 605890085, "end": 605893591, "channels": ["SWDIO"], "paint": "target"}
+{"id": "drive/605893591", "kind": "drive", "start": 605893591, "end": 605893781, "channels": ["SWDIO"], "paint": "neither"}
 {"id": "write/606303734", "kind": "write", "start": 606303707, "end": 606307757, "channels": ["SWCLK", "SWDIO"], "label": "Write AP 0x04 0xE000EDF0: OK (one of 104 whose data periods are mostly 93 ns)"}
 {"id": "request/606303734", "kind": "request", "start": 606303707, "end": 606304141, "channels": ["SWCLK", "SWDIO"], "label": "Request", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "ack/606304227", "kind": "ack", "start": 606304193, "end": 606304428, "channels": ["SWCLK", "SWDIO"], "label": "Turnaround and acknowledge", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "turnaround/606304554", "kind": "turnaround", "start": 606304477, "end": 606304780, "channels": ["SWCLK", "SWDIO"], "label": "Turnaround, 180 ns", "measure": {"channel": "SWCLK", "what": "period"}}
 {"id": "data/606304734", "kind": "data", "start": 606304687, "end": 606307757, "channels": ["SWCLK", "SWDIO"], "label": "Data and parity", "measure": {"channel": "SWCLK", "what": "rate"}}
 {"id": "stretch/622376368", "kind": "stretch", "start": 622376321, "end": 622382555, "channels": ["SWCLK", "SWDIO"], "label": "A write-data period of 6140 ns among mostly 93 ns ones; 1 of 104 writes have one", "measure": {"channel": "SWCLK", "what": "period"}}
+{"id": "drive/606303734", "kind": "drive", "start": 606303707, "end": 606304114, "channels": ["SWDIO"], "paint": "probe"}
+{"id": "drive/606304114", "kind": "drive", "start": 606304114, "end": 606304227, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/606304227", "kind": "drive", "start": 606304227, "end": 606304401, "channels": ["SWDIO"], "paint": "target"}
+{"id": "drive/606304401", "kind": "drive", "start": 606304401, "end": 606304557, "channels": ["SWDIO"], "paint": "neither"}
+{"id": "drive/606304557", "kind": "drive", "start": 606304557, "end": 606307757, "channels": ["SWDIO"], "paint": "probe"}
 {"id": "wait/372635372", "kind": "wait", "start": 372635325, "end": 372636569, "channels": ["SWCLK", "SWDIO"], "label": "WAIT to a read DP 0x0C (1 of 156)"}
 {"id": "wait/373235112", "kind": "wait", "start": 373235065, "end": 373236308, "channels": ["SWCLK", "SWDIO"], "label": "WAIT to a read DP 0x0C (2 of 156)"}
 {"id": "wait/373315670", "kind": "wait", "start": 373315623, "end": 373316866, "channels": ["SWCLK", "SWDIO"], "label": "WAIT to a read AP 0x0C (3 of 156)"}

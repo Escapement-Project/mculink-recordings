@@ -2,3 +2,7 @@ format = "tickwave-annotations/1"
 recording = "stock-reads.tickwave"
 recording_id = "blake3:ba9ec275bec2b2b97275dec1232fc01373cb79ccc09bc8d3806808abe2cd9b76"
 include = ["stock-reads.wire_clock.jsonl"]
+
+# How a view starts where its page says nothing: in NXP's colour.
+[view]
+colour = ["#2a78d6", "#3987e5"]

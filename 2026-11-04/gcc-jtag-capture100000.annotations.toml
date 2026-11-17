@@ -2,3 +2,7 @@ format = "tickwave-annotations/1"
 recording = "gcc-jtag-capture100000.tickwave"
 recording_id = "blake3:7ad509d1c917bebc8a812e7c700d55f0f5621535106827e4282d05c711b697cf"
 include = ["gcc-jtag-capture100000.wire_clock.jsonl"]
+
+# How a view starts where its page says nothing: in Verge's colour.
+[view]
+colour = ["#0f8a6c", "#1aa384"]

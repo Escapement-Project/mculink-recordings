@@ -1,11 +1,24 @@
-{"format": "tickwave-annotations/1", "source": "wire_cjtag", "version": "sha256:4c09dffb83f5", "recording_id": "blake3:3aa2019dfc9718870a194b859e53a7fdcb671bb71d44d267e89ebb27961d6f83"}
+{"format": "tickwave-annotations/1", "source": "wire_cjtag", "version": "sha256:54f43ecf3659", "recording_id": "blake3:3aa2019dfc9718870a194b859e53a7fdcb671bb71d44d267e89ebb27961d6f83", "role": [{"name": "probe", "label": "probe drives"}, {"name": "target", "label": "target drives"}]}
 {"id": "frame/26344840323", "kind": "frame", "start": 26344840323, "end": 26344840451, "channels": ["TCKC", "TMSC"], "label": "3 packets in 127 ns: 44% of 4,334,420 frames whose shortest packet is 20 ns", "measure": {"channel": "TCKC", "what": "duration"}}
 {"id": "tdo/26344840370", "kind": "tdo", "start": 26344840357, "end": 26344840460, "channels": ["TCKC", "TMSC"], "label": "TDO packet, 80 ns", "measure": {"channel": "TCKC", "what": "period"}}
+{"id": "drive/26344840223", "kind": "drive", "start": 26344840223, "end": 26344840296, "channels": ["TMSC"], "paint": "target"}
+{"id": "drive/26344840296", "kind": "drive", "start": 26344840296, "end": 26344840330, "channels": ["TMSC"], "paint": "probe"}
+{"id": "drive/26344840330", "kind": "drive", "start": 26344840330, "end": 26344840349, "channels": ["TMSC"], "paint": "probe"}
+{"id": "drive/26344840349", "kind": "drive", "start": 26344840349, "end": 26344840423, "channels": ["TMSC"], "paint": "target"}
+{"id": "drive/26344840423", "kind": "drive", "start": 26344840423, "end": 26344840456, "channels": ["TMSC"], "paint": "probe"}
 {"id": "frame/26354443709", "kind": "frame", "start": 26354443709, "end": 26354443790, "channels": ["TCKC", "TMSC"], "label": "3 packets in 80 ns: 3% of 4,334,420 frames whose shortest packet is 20 ns", "measure": {"channel": "TCKC", "what": "duration"}}
 {"id": "tdo/26354443749", "kind": "tdo", "start": 26354443739, "end": 26354443799, "channels": ["TCKC", "TMSC"], "label": "TDO packet, 40 ns", "measure": {"channel": "TCKC", "what": "period"}}
 {"id": "frame/26354443789", "kind": "frame", "start": 26354443789, "end": 26354443923, "channels": ["TCKC", "TMSC"], "label": "3 packets in 133 ns: 47% of 4,334,420 frames whose shortest packet is 20 ns", "measure": {"channel": "TCKC", "what": "duration"}}
 {"id": "tdo/26354443836", "kind": "tdo", "start": 26354443823, "end": 26354443932, "channels": ["TCKC", "TMSC"], "label": "TDO packet, 87 ns", "measure": {"channel": "TCKC", "what": "period"}}
+{"id": "drive/26354443762", "kind": "drive", "start": 26354443762, "end": 26354443795, "channels": ["TMSC"], "paint": "probe"}
+{"id": "drive/26354443795", "kind": "drive", "start": 26354443795, "end": 26354443815, "channels": ["TMSC"], "paint": "probe"}
+{"id": "drive/26354443815", "kind": "drive", "start": 26354443815, "end": 26354443889, "channels": ["TMSC"], "paint": "target"}
+{"id": "drive/26354443889", "kind": "drive", "start": 26354443889, "end": 26354443928, "channels": ["TMSC"], "paint": "probe"}
 {"id": "frame/26354452263", "kind": "frame", "start": 26354452263, "end": 26354452411, "channels": ["TCKC", "TMSC"], "label": "3 packets in 147 ns: 3% of 4,334,420 frames whose shortest packet is 20 ns", "measure": {"channel": "TCKC", "what": "duration"}}
 {"id": "tdo/26354452310", "kind": "tdo", "start": 26354452297, "end": 26354452420, "channels": ["TCKC", "TMSC"], "label": "TDO packet, 100 ns", "measure": {"channel": "TCKC", "what": "period"}}
+{"id": "drive/26354452229", "kind": "drive", "start": 26354452229, "end": 26354452269, "channels": ["TMSC"], "paint": "probe"}
+{"id": "drive/26354452269", "kind": "drive", "start": 26354452269, "end": 26354452289, "channels": ["TMSC"], "paint": "probe"}
+{"id": "drive/26354452289", "kind": "drive", "start": 26354452289, "end": 26354452363, "channels": ["TMSC"], "paint": "target"}
+{"id": "drive/26354452363", "kind": "drive", "start": 26354452363, "end": 26354452416, "channels": ["TMSC"], "paint": "probe"}
 {"id": "frame/26373844385", "kind": "frame", "start": 26373844385, "end": 26373844453, "channels": ["TCKC", "TMSC"], "label": "2 packets in 67 ns: 3% of 4,334,420 frames whose shortest packet is 20 ns", "measure": {"channel": "TCKC", "what": "duration"}}
 {"id": "tdo/26373844405", "kind": "tdo", "start": 26373844395, "end": 26373844476, "channels": ["TCKC", "TMSC"], "label": "TDO packet, 47 ns", "measure": {"channel": "TCKC", "what": "period"}}

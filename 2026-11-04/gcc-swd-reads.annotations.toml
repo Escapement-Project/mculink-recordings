@@ -2,3 +2,7 @@ format = "tickwave-annotations/1"
 recording = "gcc-swd-reads.tickwave"
 recording_id = "blake3:a8aaa4b3fcf592584fcc139b0007c5139512b0f4e7ff6de1fed17157b9ff9649"
 include = ["gcc-swd-reads.wire_swd.jsonl"]
+
+# How a view starts where its page says nothing: in Verge's colour.
+[view]
+colour = ["#0f8a6c", "#1aa384"]
