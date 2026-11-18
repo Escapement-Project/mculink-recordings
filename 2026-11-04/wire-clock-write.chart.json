@@ -67,7 +67,7 @@
   },
   {
    "id": "gcc-a0e17c8-capture100000",
-   "name": "Verge, GCC build, capturing energy at 100,000 pairs/s",
+   "name": "Verge, GCC build, capturing energy at 100,000 samples/s",
    "short": "Verge, capturing",
    "colour": "verge",
    "pattern": "second-build",
