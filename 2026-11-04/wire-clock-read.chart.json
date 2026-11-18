@@ -105,8 +105,8 @@
   },
   {
    "id": "stock-v3174",
-   "name": "NXP's firmware V3.174",
-   "short": "NXP",
+   "name": "Stock V3.174",
+   "short": "Stock",
    "colour": "nxp",
    "pattern": "solid",
    "marker": "circle",
