@@ -18,17 +18,18 @@ or from disk, and its command line describes one with `tickwave info NAME.tickwa
 ## 2026-11-04
 
 The probe is an MCU-Link Pro running Verge, built with GCC at df11e14, or NXP's firmware V3.174.
-SWD runs to an MSPM0L1306, JTAG and cJTAG to a CC1312R1. The analyser samples every 1 ns. Its
-leads load the lines, so some reads sample a cycle later than they do without them, and the
-throughput behind these recordings is not the page's: those runs had nothing on the lines.
+SWD runs to an MSPM0L1306, JTAG and cJTAG to a CC1312R1. The analyser records each line every
+1 ns. Its leads load the lines, so some reads take their data a cycle later than they do without
+them, and the throughput behind these recordings is not the page's: those runs had nothing on the
+lines.
 
 | Recording | What it holds |
 |---|---|
 | `gcc-swd-reads` | Verge (GCC): 64 KiB flash reads at 50, 37.5, 30 and 10 MHz |
-| `gcc-swd-reads-capture100000` | Verge (GCC): 64 KiB flash reads at 50, 37.5 and 30 MHz, capturing energy at 100,000 pairs/s |
+| `gcc-swd-reads-capture100000` | Verge (GCC): 64 KiB flash reads at 50, 37.5 and 30 MHz, capturing energy at 100,000 samples/s |
 | `stock-swd-reads` | NXP's firmware: 64 KiB flash reads at 10, 20, 25 and 50 MHz |
 | `gcc-jtag-probe-rs` | Verge (GCC): probe-rs JTAG throughput |
-| `gcc-jtag-capture100000` | Verge (GCC): probe-rs JTAG throughput, capturing energy at 100,000 pairs/s |
+| `gcc-jtag-capture100000` | Verge (GCC): probe-rs JTAG throughput, capturing energy at 100,000 samples/s |
 | `stock-jtag-probe-rs` | NXP's firmware: probe-rs JTAG throughput |
 | `stock-reads` | NXP's firmware: 256 KiB JTAG reads at 1, 10, 20, 30 and 50 MHz |
 | `gcc-oscan1-probe-rs` | Verge (GCC): probe-rs cJTAG OScan1 throughput |
