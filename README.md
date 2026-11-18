@@ -47,7 +47,8 @@ of the version that wrote it.
 In the SWD reads, each session's annotation also states its figures as values: the clock asked for,
 and the request, read data and write data clocks measured, in MHz. `wire-clock-request.chart.json`,
 `wire-clock-read.chart.json` and `wire-clock-write.chart.json` chart them against the clock asked
-for, in tickwave's chart format, and each point names the session it comes from. mculink-bench's
+for, in tickwave's chart format, and each point names the session it comes from. They name NXP's
+firmware "Stock V3.174", as the measurements page's charts do. mculink-bench's
 `tools/wire/wire_chart.py` writes them from the annotations.
 
 ## Licence
